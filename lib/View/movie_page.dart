@@ -30,8 +30,10 @@ class _MoviePageState extends State<MoviePage> {
         backgroundColor: Colors.transparent,
         body: _widgetsOptions.elementAt(_selectedIndex),
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.grey[400],
+          backgroundColor: Colors.grey,
+          type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.white,
+          unselectedItemColor: const Color.fromRGBO(64, 66, 68, 1),
           currentIndex: _selectedIndex,
           onTap: onTapNavigationBar,
           items: const [
